@@ -1,0 +1,39 @@
+.clients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients__item {
+  margin-bottom: 40px;
+  width: 160px;
+  height: 60px;
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and @mobile-width {
+
+  .clients__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 0 10px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}

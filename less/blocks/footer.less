@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__bottom-sidebar {
+  margin-top: 65px;
+}
+
+@media only screen and @mobile-width {
+
+  .footer {
+    flex-flow: column;
+  }
+
+  .footer__bottom-sidebar {
+    margin: 0;
+  }
+}

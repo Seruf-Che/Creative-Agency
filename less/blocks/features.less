@@ -1,0 +1,131 @@
+.features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.features__heading {
+  margin-top: 48px;
+}
+
+.features__item {
+  position: relative;
+  width: 33.33%;
+  padding: 115px 34px 34px 34px;
+  text-align: center;
+  border-color: @color-border;
+
+  &:nth-child(1) {
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+
+  }
+
+  &:nth-child(2) {
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+
+  }
+
+  &:nth-child(3) {
+    border-bottom-style: solid;
+    border-width: 1px;
+
+  }
+
+  &:nth-child(4) {
+    border-right-style: solid;
+    border-width: 1px;
+
+  }
+
+  &:nth-child(5) {
+    border-right-style: solid;
+    border-width: 1px;
+
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-screen::before {
+    background-image: url('../img/icon-features-screen.svg');
+  }
+
+  &--icon-brush::before {
+    background-image: url('../img/icon-features-brush.svg');
+  }
+
+  &--icon-phone::before {
+    background-image: url('../img/icon-features-phone.svg');
+  }
+
+  &--icon-pie-chart::before {
+    background-image: url('../img/icon-features-pie-chart.svg');
+  }
+
+  &--icon-game-console::before {
+    background-image: url('../img/icon-features-game-console.svg');
+  }
+
+  &--icon-heart::before {
+    background-image: url('../img/icon-features-heart.svg');
+  }
+}
+
+.features__title,
+.features__description {
+  margin: 0;
+  font-family: @font;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 900;
+}
+
+.features__title {
+  text-transform: uppercase;
+}
+
+.features__description {
+  margin-top: 17px;
+  font-weight: 300;
+}
+
+@media only screen and @tablet-width {
+  
+  .features__title {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and @mobile-width {
+  
+  .features__heading {
+    margin-top: 0;
+  }
+  
+  .features .features__item {
+    width: 100%;
+    border-bottom-style: solid;
+    border-right-style: none;
+  }
+  
+  .features .features__item:last-child {
+    border: none;
+  }
+}
