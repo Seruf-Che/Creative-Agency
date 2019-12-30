@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Seruf's build",
   "main": "index.js",
-  "homepage": "https://seruf-che.github.io/cv-portfolio/",
+  "homepage": "https://seruf-che.github.io/Creative-Agency/",
   "dependencies": {
     "@hapi/cryptiles": "^4.2.1",
     "@hapi/hoek": "^8.5.0",
